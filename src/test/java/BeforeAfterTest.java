@@ -36,7 +36,6 @@ public class BeforeAfterTest {
     public void refreshPage(){
         driver.navigate().to("http://compendiumdev.co.uk/selenium/refresh.php");
         assertTrue(driver.getTitle().matches("Refreshed Page on [0-9]{10}"));
-
     }
 
     @Test

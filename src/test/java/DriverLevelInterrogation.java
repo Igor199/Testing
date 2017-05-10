@@ -19,7 +19,7 @@ public class DriverLevelInterrogation {
     public static void quitDriver() {
         driver.quit();
     }
-    
+
     @Test
     public void assertTitleEquals() {
         Assert.assertTrue(driver.getTitle().matches("Basic Web Page Title"));
