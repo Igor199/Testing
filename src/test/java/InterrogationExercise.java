@@ -22,7 +22,7 @@ public class InterrogationExercise {
         final String pageURL = "http://compendiumdev.co.uk/selenium/basic_web_page.html";
 
         driver.navigate().to(pageURL);
-        
+
         assertThat(driver.getTitle(), is("Basic Web Page Title"));
         assertThat(driver.getCurrentUrl(), is(pageURL));
         assertThat(driver.getPageSource(), containsString("A paragraph of text"));
