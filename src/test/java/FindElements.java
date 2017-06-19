@@ -29,14 +29,12 @@ public class FindElements {
     public void findElementTestsBylinkText() {
         WebElement jumpToPara0 = driver.findElement(By.linkText("jump to para 0"));
         assertEquals("a26", jumpToPara0.getAttribute("id"));
-
     }
 
     @Test
     public void findElementByName() {
         WebElement cParagraph = driver.findElement(By.name("pName3"));
         assertEquals("This is c paragraph text", cParagraph.getText());
-
     }
 
     @Test
